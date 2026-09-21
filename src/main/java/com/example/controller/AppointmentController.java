@@ -22,15 +22,6 @@ public class AppointmentController {
 
     private final AppointmentService appointmentService;
 
-   /*  @PostMapping
-    public ResponseEntity<Appointment> createAppointment(
-            @RequestBody AppointmentRequest request
-    ) {
-        Appointment appointment = appointmentService.createAppointment(request);
-        return ResponseEntity
-                .status(HttpStatus.CREATED)
-                .body(appointment);
-    }*/
 
         @PostMapping
    public ResponseEntity<AppointmentResponse> createAppointment(
